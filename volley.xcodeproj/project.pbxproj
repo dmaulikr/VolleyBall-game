@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9442A0441823CC0900A3024B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442A0431823CC0900A3024B /* Foundation.framework */; };
+		9442A0461823CC0900A3024B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442A0451823CC0900A3024B /* CoreGraphics.framework */; };
+		9442A0481823CC0900A3024B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442A0471823CC0900A3024B /* UIKit.framework */; };
+		9442A04A1823CC0900A3024B /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442A0491823CC0900A3024B /* SpriteKit.framework */; };
+		9442A0501823CC0900A3024B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9442A04E1823CC0900A3024B /* InfoPlist.strings */; };
+		9442A0521823CC0900A3024B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442A0511823CC0900A3024B /* main.m */; };
+		9442A0561823CC0900A3024B /* EPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442A0551823CC0900A3024B /* EPAppDelegate.m */; };
+		9442A0591823CC0900A3024B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9442A0571823CC0900A3024B /* Main.storyboard */; };
+		9442A05C1823CC0900A3024B /* EPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442A05B1823CC0900A3024B /* EPViewController.m */; };
+		9442A05F1823CC0900A3024B /* EPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442A05E1823CC0900A3024B /* EPMyScene.m */; };
+		9442A0611823CC0900A3024B /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 9442A0601823CC0900A3024B /* Spaceship.png */; };
+		9442A0631823CC0900A3024B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9442A0621823CC0900A3024B /* Images.xcassets */; };
+		9442A06A1823CC0900A3024B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442A0691823CC0900A3024B /* XCTest.framework */; };
+		9442A06B1823CC0900A3024B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442A0431823CC0900A3024B /* Foundation.framework */; };
+		9442A06C1823CC0900A3024B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442A0471823CC0900A3024B /* UIKit.framework */; };
+		9442A0741823CC0900A3024B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9442A0721823CC0900A3024B /* InfoPlist.strings */; };
+		9442A0761823CC0900A3024B /* volleyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442A0751823CC0900A3024B /* volleyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9442A06D1823CC0900A3024B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442A0381823CC0900A3024B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9442A03F1823CC0900A3024B;
+			remoteInfo = volley;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9442A0401823CC0900A3024B /* volley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = volley.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9442A0431823CC0900A3024B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9442A0451823CC0900A3024B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9442A0471823CC0900A3024B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9442A0491823CC0900A3024B /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		9442A04D1823CC0900A3024B /* volley-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "volley-Info.plist"; sourceTree = "<group>"; };
+		9442A04F1823CC0900A3024B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9442A0511823CC0900A3024B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9442A0531823CC0900A3024B /* volley-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "volley-Prefix.pch"; sourceTree = "<group>"; };
+		9442A0541823CC0900A3024B /* EPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPAppDelegate.h; sourceTree = "<group>"; };
+		9442A0551823CC0900A3024B /* EPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPAppDelegate.m; sourceTree = "<group>"; };
+		9442A0581823CC0900A3024B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9442A05A1823CC0900A3024B /* EPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPViewController.h; sourceTree = "<group>"; };
+		9442A05B1823CC0900A3024B /* EPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPViewController.m; sourceTree = "<group>"; };
+		9442A05D1823CC0900A3024B /* EPMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPMyScene.h; sourceTree = "<group>"; };
+		9442A05E1823CC0900A3024B /* EPMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPMyScene.m; sourceTree = "<group>"; };
+		9442A0601823CC0900A3024B /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		9442A0621823CC0900A3024B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9442A0681823CC0900A3024B /* volleyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = volleyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9442A0691823CC0900A3024B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9442A0711823CC0900A3024B /* volleyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "volleyTests-Info.plist"; sourceTree = "<group>"; };
+		9442A0731823CC0900A3024B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9442A0751823CC0900A3024B /* volleyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = volleyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9442A03D1823CC0900A3024B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442A0461823CC0900A3024B /* CoreGraphics.framework in Frameworks */,
+				9442A0481823CC0900A3024B /* UIKit.framework in Frameworks */,
+				9442A04A1823CC0900A3024B /* SpriteKit.framework in Frameworks */,
+				9442A0441823CC0900A3024B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442A0651823CC0900A3024B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442A06A1823CC0900A3024B /* XCTest.framework in Frameworks */,
+				9442A06C1823CC0900A3024B /* UIKit.framework in Frameworks */,
+				9442A06B1823CC0900A3024B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9442A0371823CC0900A3024B = {
+			isa = PBXGroup;
+			children = (
+				9442A04B1823CC0900A3024B /* volley */,
+				9442A06F1823CC0900A3024B /* volleyTests */,
+				9442A0421823CC0900A3024B /* Frameworks */,
+				9442A0411823CC0900A3024B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9442A0411823CC0900A3024B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9442A0401823CC0900A3024B /* volley.app */,
+				9442A0681823CC0900A3024B /* volleyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9442A0421823CC0900A3024B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9442A0431823CC0900A3024B /* Foundation.framework */,
+				9442A0451823CC0900A3024B /* CoreGraphics.framework */,
+				9442A0471823CC0900A3024B /* UIKit.framework */,
+				9442A0491823CC0900A3024B /* SpriteKit.framework */,
+				9442A0691823CC0900A3024B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9442A04B1823CC0900A3024B /* volley */ = {
+			isa = PBXGroup;
+			children = (
+				9442A0541823CC0900A3024B /* EPAppDelegate.h */,
+				9442A0551823CC0900A3024B /* EPAppDelegate.m */,
+				9442A0571823CC0900A3024B /* Main.storyboard */,
+				9442A05A1823CC0900A3024B /* EPViewController.h */,
+				9442A05B1823CC0900A3024B /* EPViewController.m */,
+				9442A05D1823CC0900A3024B /* EPMyScene.h */,
+				9442A05E1823CC0900A3024B /* EPMyScene.m */,
+				9442A0601823CC0900A3024B /* Spaceship.png */,
+				9442A0621823CC0900A3024B /* Images.xcassets */,
+				9442A04C1823CC0900A3024B /* Supporting Files */,
+			);
+			path = volley;
+			sourceTree = "<group>";
+		};
+		9442A04C1823CC0900A3024B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9442A04D1823CC0900A3024B /* volley-Info.plist */,
+				9442A04E1823CC0900A3024B /* InfoPlist.strings */,
+				9442A0511823CC0900A3024B /* main.m */,
+				9442A0531823CC0900A3024B /* volley-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9442A06F1823CC0900A3024B /* volleyTests */ = {
+			isa = PBXGroup;
+			children = (
+				9442A0751823CC0900A3024B /* volleyTests.m */,
+				9442A0701823CC0900A3024B /* Supporting Files */,
+			);
+			path = volleyTests;
+			sourceTree = "<group>";
+		};
+		9442A0701823CC0900A3024B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9442A0711823CC0900A3024B /* volleyTests-Info.plist */,
+				9442A0721823CC0900A3024B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9442A03F1823CC0900A3024B /* volley */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9442A0791823CC0900A3024B /* Build configuration list for PBXNativeTarget "volley" */;
+			buildPhases = (
+				9442A03C1823CC0900A3024B /* Sources */,
+				9442A03D1823CC0900A3024B /* Frameworks */,
+				9442A03E1823CC0900A3024B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = volley;
+			productName = volley;
+			productReference = 9442A0401823CC0900A3024B /* volley.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9442A0671823CC0900A3024B /* volleyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9442A07C1823CC0900A3024B /* Build configuration list for PBXNativeTarget "volleyTests" */;
+			buildPhases = (
+				9442A0641823CC0900A3024B /* Sources */,
+				9442A0651823CC0900A3024B /* Frameworks */,
+				9442A0661823CC0900A3024B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9442A06E1823CC0900A3024B /* PBXTargetDependency */,
+			);
+			name = volleyTests;
+			productName = volleyTests;
+			productReference = 9442A0681823CC0900A3024B /* volleyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9442A0381823CC0900A3024B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Eduard Pyatnitsyn";
+				TargetAttributes = {
+					9442A0671823CC0900A3024B = {
+						TestTargetID = 9442A03F1823CC0900A3024B;
+					};
+				};
+			};
+			buildConfigurationList = 9442A03B1823CC0900A3024B /* Build configuration list for PBXProject "volley" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9442A0371823CC0900A3024B;
+			productRefGroup = 9442A0411823CC0900A3024B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9442A03F1823CC0900A3024B /* volley */,
+				9442A0671823CC0900A3024B /* volleyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9442A03E1823CC0900A3024B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442A0501823CC0900A3024B /* InfoPlist.strings in Resources */,
+				9442A0631823CC0900A3024B /* Images.xcassets in Resources */,
+				9442A0611823CC0900A3024B /* Spaceship.png in Resources */,
+				9442A0591823CC0900A3024B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442A0661823CC0900A3024B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442A0741823CC0900A3024B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9442A03C1823CC0900A3024B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442A05C1823CC0900A3024B /* EPViewController.m in Sources */,
+				9442A0521823CC0900A3024B /* main.m in Sources */,
+				9442A0561823CC0900A3024B /* EPAppDelegate.m in Sources */,
+				9442A05F1823CC0900A3024B /* EPMyScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442A0641823CC0900A3024B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442A0761823CC0900A3024B /* volleyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9442A06E1823CC0900A3024B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9442A03F1823CC0900A3024B /* volley */;
+			targetProxy = 9442A06D1823CC0900A3024B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9442A04E1823CC0900A3024B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9442A04F1823CC0900A3024B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9442A0571823CC0900A3024B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9442A0581823CC0900A3024B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9442A0721823CC0900A3024B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9442A0731823CC0900A3024B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9442A0771823CC0900A3024B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9442A0781823CC0900A3024B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9442A07A1823CC0900A3024B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "volley/volley-Prefix.pch";
+				INFOPLIST_FILE = "volley/volley-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9442A07B1823CC0900A3024B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "volley/volley-Prefix.pch";
+				INFOPLIST_FILE = "volley/volley-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9442A07D1823CC0900A3024B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/volley.app/volley";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "volley/volley-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "volleyTests/volleyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9442A07E1823CC0900A3024B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/volley.app/volley";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "volley/volley-Prefix.pch";
+				INFOPLIST_FILE = "volleyTests/volleyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9442A03B1823CC0900A3024B /* Build configuration list for PBXProject "volley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442A0771823CC0900A3024B /* Debug */,
+				9442A0781823CC0900A3024B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9442A0791823CC0900A3024B /* Build configuration list for PBXNativeTarget "volley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442A07A1823CC0900A3024B /* Debug */,
+				9442A07B1823CC0900A3024B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9442A07C1823CC0900A3024B /* Build configuration list for PBXNativeTarget "volleyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442A07D1823CC0900A3024B /* Debug */,
+				9442A07E1823CC0900A3024B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9442A0381823CC0900A3024B /* Project object */;
+}
