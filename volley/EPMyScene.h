@@ -14,6 +14,7 @@
 @property (nonatomic) SKSpriteNode * ball;
 @property (nonatomic) SKSpriteNode * steel;
 @property (nonatomic) SKSpriteNode * background;
+@property (nonatomic) SKLabelNode  * restartLabel;
 
 @property (nonatomic) BOOL matchStart;
 @property (nonatomic) CGSize sceneSize;

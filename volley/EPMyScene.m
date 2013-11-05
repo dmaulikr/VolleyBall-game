@@ -12,10 +12,23 @@
 
 @implementation EPMyScene{
     NSArray *_playerStayFrames;
-
+    
 }
 
 -(void) initPlayer{
+    NSArray *color = @[[SKColor redColor]
+                       ,[SKColor darkGrayColor]   // 0.333 white
+                       ,[SKColor lightGrayColor]  // 0.667 white
+                       ,[SKColor grayColor]       // 0.5 white
+                       ,[SKColor redColor]        // 1.0, 0.0, 0.0 RGB
+                       ,[SKColor greenColor]      // 0.0, 1.0, 0.0 RGB
+                       ,[SKColor blueColor]       // 0.0, 0.0, 1.0 RGB
+                       ,[SKColor cyanColor]       // 0.0, 1.0, 1.0 RGB
+                       ,[SKColor yellowColor]     // 1.0, 1.0, 0.0 RGB
+                       ,[SKColor magentaColor]    // 1.0, 0.0, 1.0 RGB
+                       ,[SKColor orangeColor]     // 1.0, 0.5, 0.0 RGB
+                       ,[SKColor purpleColor]     // 0.5, 0.0, 0.5 RGB
+                       ,[SKColor brownColor]];      // 0.6, 0.4, 0.2 RGB
     SKTextureAtlas *playerAnimatedAtlas = [SKTextureAtlas atlasNamed:@"playerBall"];
     NSMutableArray *stayFrames = [NSMutableArray array];
     NSArray *textureName  = [[playerAnimatedAtlas textureNames] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
@@ -26,6 +39,8 @@
     _playerStayFrames = stayFrames;
     NSLog(@"%@",_playerStayFrames);
     _player = [SKSpriteNode spriteNodeWithTexture:_playerStayFrames[1]];
+    _player.color = color[arc4random() % color.count];
+    _player.colorBlendFactor = 0.9;
     _player.scale = 0.4;
     _player.physicsBody.restitution = 0.00002f;
     _player.position = CGPointMake(_player.anchorPoint.x,_player.anchorPoint.y);
@@ -60,8 +75,17 @@
     _steel.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:_steel.frame.size];
     _steel.physicsBody.mass = 200.0;
     _steel.position = CGPointMake(_sceneSize.width/2, _steel.frame.size.height+_steel.anchorPoint.y);
-    
     [self addChild:_steel];
+    
+    _restartLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+    _restartLabel.text = @"Restart";
+    _restartLabel.color = [SKColor darkGrayColor];
+    _restartLabel.colorBlendFactor = 1;
+    _restartLabel.fontSize = 12;
+    _restartLabel.position = CGPointMake(self.frame.size.width  - _restartLabel.frame.size.width,
+                                   self.frame.size.height -17  - _restartLabel.frame.size.height);
+    
+    [self addChild:_restartLabel];
 
 }
 
@@ -72,13 +96,13 @@
     if (self = [super initWithSize:size]) {
         _sceneSize = size;
         _matchStart = YES;
-
+        
         NSLog(@"Size: %@", NSStringFromCGSize(size));
         
         
         [self initStage];
         [self initPlayer];
-
+        
     }
     return self;
 }
@@ -90,19 +114,18 @@
 #pragma mark - Jump!
 
 - (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event
-    {
+{
 #warning Добавить обработку коллизий и применение вектора силы на мяч
-        for (UITouch *touch in touches) {
+    for (UITouch *touch in touches) {
+        if(false){
+        }else{
             _ball.physicsBody.affectedByGravity = YES;
-            //[_player runAction:[SKAction repeatAction:[SKAction animateWithTextures:_playerStayFrames timePerFrame:0.05f resize:YES restore:YES] count:1]];
-           // NSLog(@"Position y in touch : %f", _player.position.y - _player.anchorPoint.y-_player.size.height /2);
             if(_player.position.y - _player.anchorPoint.y-_player.size.height /2 < 5){
- //           CMAccelerometerData* data = self.motionManager.accelerometerData;
-                //10000.0 * (-data.acceleration.y )
-            [_player.physicsBody applyForce:CGVectorMake(0, 6000.0)];
-                        }
+                [_player.physicsBody applyImpulse:CGVectorMake(0, 150)];
+            }
         }
-
+    }
+    
 }
 
 - (void)didMoveToView:(SKView *)view
@@ -114,21 +137,17 @@
 
 -(void)update:(NSTimeInterval)currentTime {
     CMAccelerometerData* data = self.motionManager.accelerometerData;
-    [_player.physicsBody applyForce:CGVectorMake(1000.0 * (-data.acceleration.y ), 0)];
+    [_player.physicsBody applyImpulse:CGVectorMake(-data.acceleration.y*10, 0)];
     if(_player.zRotation != 0 ) _player.zRotation = 0;
-#warning Переделать перепрыгивание через сетку!!!
-    if(_player.position.x  + _player.anchorPoint.x >= _steel.position.x - _steel.anchorPoint.x - _player.size.width/2 ){
-        //       NSLog(@"Player position: %f,     screen size: %f",_player.position.x,2*_player.anchorPoint.x + (self.frame.size.width/2));
-        _player.physicsBody = [ SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
-        _player.physicsBody = [ SKPhysicsBody bodyWithCircleOfRadius:_player.size.width/2];
-        _player.position = CGPointMake( _steel.position.x - _steel.anchorPoint.x - 2*_player.anchorPoint.x-_player.size.width/2 , _player.position.y);
-        
+
+    if(_player.position.x  + _player.size.height/2+ _player.anchorPoint.x >= _steel.position.x - _steel.anchorPoint.x  - _player.anchorPoint.x ){
+        _player.position = CGPointMake( _steel.position.x - _steel.anchorPoint.x - _player.anchorPoint.x - _player.size.width/2 , _player.position.y);
+        [_player.physicsBody applyImpulse:CGVectorMake(-15, 0)];
     }
-    //           [_player.physicsBody applyForce:CGVectorMake(1000.0 * (-data.acceleration.y ), 1000.0 * (-data.acceleration.y))];
-    //NSLog(@"%lf", data.acceleration.y);
+
     if (_matchStart == YES){
         _matchStart = NO;
-    [self start];
+        [self start];
     }
 }
 
