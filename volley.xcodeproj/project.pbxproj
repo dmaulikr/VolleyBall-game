@@ -17,13 +17,18 @@
 		9442A0591823CC0900A3024B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9442A0571823CC0900A3024B /* Main.storyboard */; };
 		9442A05C1823CC0900A3024B /* EPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442A05B1823CC0900A3024B /* EPViewController.m */; };
 		9442A05F1823CC0900A3024B /* EPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442A05E1823CC0900A3024B /* EPMyScene.m */; };
-		9442A0611823CC0900A3024B /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 9442A0601823CC0900A3024B /* Spaceship.png */; };
 		9442A0631823CC0900A3024B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9442A0621823CC0900A3024B /* Images.xcassets */; };
 		9442A06A1823CC0900A3024B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442A0691823CC0900A3024B /* XCTest.framework */; };
 		9442A06B1823CC0900A3024B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442A0431823CC0900A3024B /* Foundation.framework */; };
 		9442A06C1823CC0900A3024B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442A0471823CC0900A3024B /* UIKit.framework */; };
 		9442A0741823CC0900A3024B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9442A0721823CC0900A3024B /* InfoPlist.strings */; };
 		9442A0761823CC0900A3024B /* volleyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442A0751823CC0900A3024B /* volleyTests.m */; };
+		949BD70E18267DDD00643E2D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949BD70D18267DDD00643E2D /* CoreMotion.framework */; };
+		949BD7101826888D00643E2D /* steel.png in Resources */ = {isa = PBXBuildFile; fileRef = 949BD70F1826888D00643E2D /* steel.png */; };
+		949BD7211826A13F00643E2D /* player.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 949BD7201826A13F00643E2D /* player.atlas */; };
+		949BD72C1827BAEE00643E2D /* playerBall.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 949BD72B1827BAEE00643E2D /* playerBall.atlas */; };
+		949BD72E1827C2DC00643E2D /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 949BD72D1827C2DC00643E2D /* background.png */; };
+		94CBD0891823F67400CC26CC /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 94CBD0881823F67400CC26CC /* ball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +58,18 @@
 		9442A05B1823CC0900A3024B /* EPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPViewController.m; sourceTree = "<group>"; };
 		9442A05D1823CC0900A3024B /* EPMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPMyScene.h; sourceTree = "<group>"; };
 		9442A05E1823CC0900A3024B /* EPMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPMyScene.m; sourceTree = "<group>"; };
-		9442A0601823CC0900A3024B /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		9442A0621823CC0900A3024B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9442A0681823CC0900A3024B /* volleyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = volleyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9442A0691823CC0900A3024B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9442A0711823CC0900A3024B /* volleyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "volleyTests-Info.plist"; sourceTree = "<group>"; };
 		9442A0731823CC0900A3024B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9442A0751823CC0900A3024B /* volleyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = volleyTests.m; sourceTree = "<group>"; };
+		949BD70D18267DDD00643E2D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		949BD70F1826888D00643E2D /* steel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steel.png; sourceTree = "<group>"; };
+		949BD7201826A13F00643E2D /* player.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = player.atlas; sourceTree = "<group>"; };
+		949BD72B1827BAEE00643E2D /* playerBall.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerBall.atlas; sourceTree = "<group>"; };
+		949BD72D1827C2DC00643E2D /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		94CBD0881823F67400CC26CC /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949BD70E18267DDD00643E2D /* CoreMotion.framework in Frameworks */,
 				9442A0461823CC0900A3024B /* CoreGraphics.framework in Frameworks */,
 				9442A0481823CC0900A3024B /* UIKit.framework in Frameworks */,
 				9442A04A1823CC0900A3024B /* SpriteKit.framework in Frameworks */,
@@ -109,6 +120,7 @@
 		9442A0421823CC0900A3024B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				949BD70D18267DDD00643E2D /* CoreMotion.framework */,
 				9442A0431823CC0900A3024B /* Foundation.framework */,
 				9442A0451823CC0900A3024B /* CoreGraphics.framework */,
 				9442A0471823CC0900A3024B /* UIKit.framework */,
@@ -121,6 +133,9 @@
 		9442A04B1823CC0900A3024B /* volley */ = {
 			isa = PBXGroup;
 			children = (
+				949BD72F1828EFF200643E2D /* images */,
+				949BD72B1827BAEE00643E2D /* playerBall.atlas */,
+				949BD7201826A13F00643E2D /* player.atlas */,
 				9442A0541823CC0900A3024B /* EPAppDelegate.h */,
 				9442A0551823CC0900A3024B /* EPAppDelegate.m */,
 				9442A0571823CC0900A3024B /* Main.storyboard */,
@@ -128,7 +143,6 @@
 				9442A05B1823CC0900A3024B /* EPViewController.m */,
 				9442A05D1823CC0900A3024B /* EPMyScene.h */,
 				9442A05E1823CC0900A3024B /* EPMyScene.m */,
-				9442A0601823CC0900A3024B /* Spaceship.png */,
 				9442A0621823CC0900A3024B /* Images.xcassets */,
 				9442A04C1823CC0900A3024B /* Supporting Files */,
 			);
@@ -162,6 +176,16 @@
 				9442A0721823CC0900A3024B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		949BD72F1828EFF200643E2D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				949BD70F1826888D00643E2D /* steel.png */,
+				949BD72D1827C2DC00643E2D /* background.png */,
+				94CBD0881823F67400CC26CC /* ball.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +265,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949BD7211826A13F00643E2D /* player.atlas in Resources */,
+				949BD72E1827C2DC00643E2D /* background.png in Resources */,
 				9442A0501823CC0900A3024B /* InfoPlist.strings in Resources */,
+				94CBD0891823F67400CC26CC /* ball.png in Resources */,
 				9442A0631823CC0900A3024B /* Images.xcassets in Resources */,
-				9442A0611823CC0900A3024B /* Spaceship.png in Resources */,
+				949BD72C1827BAEE00643E2D /* playerBall.atlas in Resources */,
+				949BD7101826888D00643E2D /* steel.png in Resources */,
 				9442A0591823CC0900A3024B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +505,7 @@
 				9442A07B1823CC0900A3024B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9442A07C1823CC0900A3024B /* Build configuration list for PBXNativeTarget "volleyTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +514,7 @@
 				9442A07E1823CC0900A3024B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
